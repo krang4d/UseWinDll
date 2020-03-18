@@ -2,16 +2,16 @@
 
 Mega2Lib::Mega2Lib()
 {
-    std::cout << "Mega2Lib created ..." << std::endl;
+    printf("Mega2Lib created ...\n");
 }
 
 void Mega2Lib::destroy()
 {
-    std::cout << "Mega2Lib destroyed ..." << std::endl;
+    printf("Mega2Lib destroyed ...\n");
     delete this;
 }
 
 void Mega2Lib::sayHello()
 {
-    std::cout << "Hello from the Mega2Lib..." << std::endl;
+    printf("Hello from the Mega2Lib...\n");
 }

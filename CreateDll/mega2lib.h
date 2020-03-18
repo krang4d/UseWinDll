@@ -1,8 +1,9 @@
 #ifndef MEGA2LIB_H
 #define MEGA2LIB_H
 
-#include <iostream>
+//#include <iostream>
 #include "imegalib.h"
+#include <stdio.h>
 
 #if defined (__GNUC__) && defined(__unix__)
   #define PRINT_API __attribute__ ((__visibility__("default")))
