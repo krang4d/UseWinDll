@@ -1,4 +1,4 @@
-CXX             = gcc
+CXX             = g++
 CXXFLAGS       = --std=c++11 -Wall -g3 -D_REENTERANT -fPIC
 
 TARGET = libmega2.so

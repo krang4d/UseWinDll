@@ -1,4 +1,4 @@
-#include <iostream>
+//#include <iostream>
 //#include "mega2lib.h"
 #include <stdio.h>
 
@@ -33,7 +33,7 @@ imegalib *getMegaLibInstance()
     handle = dlopen("/home/pgg/qt_projects/UseWinDll/CreateDll/libmega2.so", RTLD_LOCAL | RTLD_LAZY);
 
     /* find the address of function and data objects */
-    iklass_factory factory_func = (iklass_factory)(dlsym(handle, "create_klass"));
+    pclass_factory_t factory_func = (pclass_factory_t)(dlsym(handle, "create_class"));
     //iptr = (int *)dlsym(handle, "my_object");
     return factory_func();
 

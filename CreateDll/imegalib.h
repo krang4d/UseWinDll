@@ -3,13 +3,14 @@
 
 #define __cdecl __attribute__((__cdecl__))
 
-struct imegalib;
+class imegalib;
 
-typedef imegalib* (__cdecl *iklass_factory)();
+typedef imegalib* (*pclass_factory_t)();
 
-struct imegalib
+class imegalib
 {
-    //virtual ~imegalib() = 0;
+public:
+    virtual ~imegalib() {}
     virtual void destroy() = 0;
     virtual void sayHello() = 0;
 };

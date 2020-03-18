@@ -27,9 +27,9 @@ public:
     virtual void sayHello() override;
 };
 
-extern "C" PRINT_API imegalib* __cdecl create_klass()
+extern "C" PRINT_API imegalib* __cdecl create_class()
 {
-    return new Mega2Lib;
+    return new Mega2Lib();
 }
 
 #endif // MEGA2LIB_H
