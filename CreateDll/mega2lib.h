@@ -4,6 +4,16 @@
 #include <iostream>
 #include "imegalib.h"
 
+#if defined (__GNUC__) && defined(__unix__)
+  #define PRINT_API __attribute__ ((__visibility__("default")))
+#elif defined (WIN32)
+  #ifdef BUILDING_DLL
+    #define PRINT_API __declspec(dllexport)
+  #else
+    #define PRINT_API __declspec(dllimport)
+  #endif
+#endif
+
 class Mega2Lib : public imegalib
 {
 public:
@@ -16,7 +26,7 @@ public:
     virtual void sayHello() override;
 };
 
-extern "C" __declspec(dllexport) imegalib* __cdecl create_klass()
+extern "C" PRINT_API imegalib* __cdecl create_klass()
 {
     return new Mega2Lib;
 }

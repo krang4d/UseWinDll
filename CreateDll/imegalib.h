@@ -1,6 +1,8 @@
 #ifndef IMEGALIB_H
 #define IMEGALIB_H
 
+#define __cdecl __attribute__((__cdecl__))
+
 struct imegalib;
 
 typedef imegalib* (__cdecl *iklass_factory)();
