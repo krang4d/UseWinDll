@@ -1,7 +1,7 @@
 CXX             = gcc
 CXXFLAGS       = --std=c++11 -Wall -g3 -D_REENTERANT -fPIC
 
-TARGET = mega2lib.so
+TARGET = libmega2.so
 OBJECTS = mega2lib.o
 
 all: $(TARGET)

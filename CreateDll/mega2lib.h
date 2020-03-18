@@ -1,7 +1,7 @@
 #ifndef MEGA2LIB_H
 #define MEGA2LIB_H
 
-#include "<iostream>"
+#include <iostream>
 #include "imegalib.h"
 
 #if defined (__GNUC__) && defined(__unix__)

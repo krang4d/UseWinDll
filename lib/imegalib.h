@@ -3,7 +3,7 @@
 
 struct imegalib;
 
-typedef imegalib* (__cdecl *iklass_factory)();
+typedef imegalib* iklass_factory();
 
 struct imegalib
 {

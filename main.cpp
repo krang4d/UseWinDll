@@ -29,7 +29,7 @@ imegalib *getMegaLibInstance()
     //int     *iptr, (*fptr)(int);
 
     /* open the needed object */
-    handle = dlopen("/home/pgg/qt_projects/UseWinDll/CreateDll/mega2lib.so", RTLD_LOCAL | RTLD_LAZY);
+    handle = dlopen("/home/pgg/qt_projects/UseWinDll/CreateDll/libmega2.so", RTLD_LOCAL | RTLD_LAZY);
 
     /* find the address of function and data objects */
     iklass_factory factory_func = reinterpret_cast<iklass_factory>(dlsym(handle, "create_klass"));
